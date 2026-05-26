@@ -1,4 +1,4 @@
- [
+export const tableData = [
   {
     "User ID": "1",
     "Device Model": "Google Pixel 5",

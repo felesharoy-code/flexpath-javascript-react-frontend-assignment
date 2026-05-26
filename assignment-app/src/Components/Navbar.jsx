@@ -1,14 +1,19 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+      <div className="container-fluid justify-content-start">
+        {/* BRAND */}
+        <Link to="/" className="navbar-brand me-4">
           User Behavior Data
-        </a>
+        </Link>
+
+        {/* NAV LINKS */}
         <div className="navbar-nav">
-          <a className="nav-link" href="/search">
+          <Link to="/search" className="nav-link">
             Search Through Dataset
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
